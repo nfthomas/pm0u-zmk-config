@@ -18,7 +18,6 @@
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_6col_layout;
-        zmk,matrix_transform = &six_column_transform;
     };
 };
 
