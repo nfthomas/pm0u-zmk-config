@@ -1,6 +1,7 @@
-layout: {zmk_keyboard: corne, layout_name: foostan_corne_5col_layout}
+layout: {zmk_keyboard: corne, layout_name: foostan_corne_6col_layout}
 layers:
   base:
+  - $$mdi:location-exit$$
   - Q
   - W
   - E
@@ -11,6 +12,8 @@ layers:
   - I
   - O
   - P
+  - DELETE
+  - Ctrl
   - {t: A, h: Alt}
   - {t: S, h: Gui}
   - {t: D, h: Shift}
@@ -21,6 +24,8 @@ layers:
   - {t: K, h: Shift}
   - {t: L, h: Gui}
   - {t: '''', h: Alt}
+  - ':'
+  - Shift
   - Z
   - X
   - C
@@ -31,10 +36,11 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
+  - Alt
   - '&nav'
   - {t: LSHFT, h: sticky, s: CAPSWORD}
-  - ␣
   - ⮐
+  - ␣
   - BSPC
   - {t: CANCEL, h: num}
   num:
@@ -49,9 +55,13 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {t: '4', h: Gui, s: $}
   - {t: '5', h: Shift, s: '%'}
   - {t: '6', h: Ctrl, s: ^}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
@@ -62,6 +72,8 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -85,11 +97,15 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: ⌘+D, h: Alt}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {t: ⌘+4, h: Gui, s: ⌘+$}
   - {t: ⌘+5, h: Shift, s: ⌘+%}
   - {t: ⌘+6, h: Ctrl, s: ⌘+^}
   - $$mdi:magnify$$
+  - {type: trans}
+  - {type: trans}
   - ⌘+H
   - ⌘+J
   - ⌘+K
@@ -99,6 +115,8 @@ layers:
   - {t: ⌘+1, s: ⌘+!}
   - {t: ⌘+2, s: ⌘+@}
   - {t: ⌘+3, s: ⌘+#}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - ^+⇧+P
   - ^+P
@@ -123,9 +141,13 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {t: ⌘+⇧+4, s: ⌘+⇧+$}
   - {t: ⌘+⇧+5, s: ⌘+⇧+%}
   - {t: ⌘+⇧+6, s: ⌘+⇧+^}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - ⇧+⌘+H
   - ⇧+⌘+J
@@ -136,6 +158,8 @@ layers:
   - {t: ⌘+⇧+1, s: ⌘+⇧+!}
   - {t: ⌘+⇧+2, s: ⌘+⇧+@}
   - {t: ⌘+⇧+3, s: ⌘+⇧+#}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -154,28 +178,34 @@ layers:
   - {type: trans}
   - {type: trans}
   - '&bootloader'
+  - {type: trans}
+  - {type: trans}
   - '&bootloader'
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - {type: trans}
-  - OUT BLE
+  - {type: trans}
   - OUT USB
   - BRI UP
   - BRI DN
   - BT CLR
   - {type: trans}
+  - {type: trans}
   - VOL DN
   - VOL UP
   - $$mdi:volume-off$$
   - {type: trans}
-  - {t: BT, h: '4'}
+  - {type: trans}
+  - {type: trans}
   - {t: BT, h: '3'}
   - {t: BT, h: '2'}
   - {t: BT, h: '1'}
   - {t: BT, h: '0'}
   - {type: trans}
+  - {type: trans}
   - ^+⇧+⎇+M
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -186,109 +216,109 @@ layers:
   - {type: trans}
   - {type: held}
 combos:
-- p: [1, 3]
+- p: [2, 4]
   k: ^+A
   l: [base, nav, num]
   a: top
   o: 0.3
   w: 40.0
-- p: [1, 2]
+- p: [2, 3]
   k: ^+Z
   l: [base, nav, num]
-- p: [2, 3]
+- p: [3, 4]
   k: ^+⇧+Z
   l: [base, nav, num]
-- p: [13, 12]
+- p: [16, 15]
   k: {t: Tab, h: ⇧+Ctrl}
   l: [base, nav, num]
-- p: [12, 11]
+- p: [15, 14]
   k: {t: Esc, h: ⇧+Alt}
   l: [base, nav, num]
-- p: [21, 23]
+- p: [26, 28]
   k: ^+X
   l: [base, nav, num]
   a: bottom
   w: 40.0
-- p: [21, 22]
+- p: [26, 27]
   k: ^+C
   l: [base, nav, num]
-- p: [22, 23]
+- p: [27, 28]
   k: ^+V
   l: [base, nav, num]
-- p: [6, 7]
+- p: [7, 8]
   k: '{'
   l: [base, nav, num]
-- p: [7, 8]
+- p: [8, 9]
   k: '}'
   l: [base, nav, num]
-- p: [6, 8]
+- p: [7, 9]
   k: ()=>{}
   l: [base, nav, num]
   a: top
   o: 0.3
   w: 60.0
-- p: [16, 17]
+- p: [19, 20]
   k: {t: (, h: ⇧+Ctrl, s: <}
   l: [base, nav, num]
-- p: [17, 18]
+- p: [20, 21]
   k: {t: ), h: ⇧+Alt, s: '>'}
   l: [base, nav, num]
-- p: [26, 27]
+- p: [31, 32]
   k: '['
   l: [base, nav, num]
-- p: [27, 28]
+- p: [32, 33]
   k: ']'
   l: [base, nav, num]
-- p: [26, 28]
+- p: [31, 33]
   k: ()=>
   l: [base, nav, num]
   a: bottom
   w: 40.0
-- p: [11, 1]
+- p: [14, 2]
   k: '@'
   l: [base, nav, num]
-- p: [12, 2]
+- p: [15, 3]
   k: '#'
   l: [base, nav, num]
-- p: [13, 3]
+- p: [16, 4]
   k: $
   l: [base, nav, num]
-- p: [14, 4]
+- p: [17, 5]
   k: '%'
   l: [base, nav, num]
-- p: [21, 11]
+- p: [26, 14]
   k: '`'
   l: [base, nav, num]
-- p: [22, 12]
+- p: [27, 15]
   k: \
   l: [base, nav, num]
-- p: [23, 13]
+- p: [28, 16]
   k: '='
   l: [base, nav, num]
-- p: [24, 14]
+- p: [29, 17]
   k: '~'
   l: [base, nav, num]
-- p: [15, 5]
+- p: [18, 6]
   k: ^
   l: [base, nav, num]
-- p: [16, 6]
+- p: [19, 7]
   k: '&'
   l: [base, nav, num]
-- p: [17, 7]
+- p: [20, 8]
   k: '*'
   l: [base, nav, num]
-- p: [18, 8]
+- p: [21, 9]
   k: +
   l: [base, nav, num]
-- p: [25, 15]
+- p: [30, 18]
   k: _
   l: [base, nav, num]
-- p: [26, 16]
+- p: [31, 19]
   k: '|'
   l: [base, nav, num]
-- p: [27, 17]
+- p: [32, 20]
   k: /
   l: [base, nav, num]
-- p: [28, 18]
+- p: [33, 21]
   k: _
   l: [base, nav, num]
