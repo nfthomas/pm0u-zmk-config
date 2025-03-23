@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - DELETE
+  - _
   - Ctrl
   - {t: A, h: Gui}
   - {t: S, h: Alt}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
   - '`'
-  - {t: LSHFT, h: sticky, s: CAPSWORD}
+  - Shift
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - ⮐
   - ␣
   - {t: BSPC, h: num}
-  - ⌦
+  - {t: BSPC, h: fn}
   num:
   - {type: trans}
   - {type: trans}
@@ -186,11 +186,11 @@ layers:
   - $$mdi:skip-next$$
   - {type: trans}
   - {type: trans}
-  - {t: BT, h: '4'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
   - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - {type: trans}
   - VOL DN
   - VOL UP
@@ -215,6 +215,49 @@ layers:
   - {type: trans}
   - {type: held}
   - {type: trans}
+  fn:
+  - {type: trans}
+  - {type: trans}
+  - F7
+  - F8
+  - F9
+  - {type: trans}
+  - PG UP
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: F4, h: Alt}
+  - {t: F5, h: Shift}
+  - {t: F6, h: Ctrl}
+  - {type: trans}
+  - PG DN
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-down$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - F1
+  - F2
+  - F3
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
 combos:
 - p: [2, 4]
   k: ^+A
