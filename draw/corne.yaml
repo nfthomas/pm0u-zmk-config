@@ -14,16 +14,16 @@ layers:
   - P
   - DELETE
   - Ctrl
-  - {t: A, h: Alt}
-  - {t: S, h: Gui}
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
   - {t: D, h: Shift}
   - {t: F, h: Ctrl}
   - G
   - H
   - {t: J, h: Ctrl}
   - {t: K, h: Shift}
-  - {t: L, h: Gui}
-  - {t: '''', h: Alt}
+  - {t: L, h: Alt}
+  - {t: '''', h: Gui}
   - '`'
   - {t: LSHFT, h: sticky, s: CAPSWORD}
   - Z
@@ -45,10 +45,10 @@ layers:
   - ⌦
   num:
   - {type: trans}
+  - {type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {type: trans}
   - {type: trans}
   - PG UP
   - HOME
@@ -57,10 +57,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: '4', h: Gui, s: $}
+  - {type: trans}
+  - {t: '4', h: Alt, s: $}
   - {t: '5', h: Shift, s: '%'}
   - {t: '6', h: Ctrl, s: ^}
-  - {type: trans}
   - {type: trans}
   - PG DN
   - $$mdi:arrow-left$$
@@ -69,10 +69,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -88,10 +88,10 @@ layers:
   - {type: trans}
   nav:
   - {type: trans}
+  - {type: trans}
   - {t: ⌘+7, s: ⌘+&}
   - {t: ⌘+8, s: ⌘+*}
   - {t: ⌘+9, s: ⌘+(}
-  - {type: trans}
   - {type: trans}
   - PG UP
   - HOME
@@ -100,15 +100,16 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: ⌘+4, h: Gui, s: ⌘+$}
+  - {type: trans}
+  - {t: ⌘+4, h: Alt, s: ⌘+$}
   - {t: ⌘+5, h: Shift, s: ⌘+%}
   - {t: ⌘+6, h: Ctrl, s: ⌘+^}
-  - $$mdi:magnify$$
-  - {type: trans}
+  - ⎇+⇥
   - PG DN
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
-  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -118,18 +119,18 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - ^+⇧+P
-  - ^+P
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - .
   - {t: ⌘+0, s: ⌘+), type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   move:
+  - {type: trans}
   - {type: trans}
   - {t: ⌘+⇧+7, s: ⌘+⇧+&}
   - {t: ⌘+⇧+8, s: ⌘+⇧+*}
@@ -143,9 +144,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: ⌘+⇧+4, s: ⌘+⇧+$}
-  - {t: ⌘+⇧+5, s: ⌘+⇧+%}
-  - {t: ⌘+⇧+6, s: ⌘+⇧+^}
+  - {t: ⌘+⇧+4, h: Alt, s: ⌘+⇧+$}
+  - {t: ⌘+⇧+5, h: Shift, s: ⌘+⇧+%}
+  - {t: ⌘+⇧+6, h: Ctrl, s: ⌘+⇧+^}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -165,8 +166,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - .
   - {t: ⌘+⇧+0, s: ⌘+⇧+)}
   - {type: trans}
   - {type: trans}
