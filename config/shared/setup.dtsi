@@ -37,10 +37,15 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 };
 
 // reusable arrow keys ← ↓ ↑ →
+// not using
 #define ARROWS  &kp LEFT &kp DOWN &kp UP &kp RIGHT
 
 // space move focus cluster
+// not using
+// TODO fix?
 #define FOCUS &kp LG(H) &kp LG(J) &kp LG(K) &kp LG(L)
 
 // space move window cluster
+// not using
+// TODO fix?
 #define MOVE &kp LS(LG(H)) &kp LS(LG(J)) &kp LS(LG(K)) &kp LS(LG(L))
