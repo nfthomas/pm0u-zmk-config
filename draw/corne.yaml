@@ -42,7 +42,7 @@ layers:
   - ⮐
   - ␣
   - {t: BSPC, h: num}
-  - {t: BSPC, h: fn}
+  - {t: ⌦, h: fn}
   num:
   - {type: trans}
   - {type: trans}
@@ -222,10 +222,10 @@ layers:
   - F8
   - F9
   - {type: trans}
-  - PG UP
-  - HOME
-  - $$mdi:arrow-up$$
-  - END
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -234,11 +234,11 @@ layers:
   - {t: F5, h: Shift}
   - {t: F6, h: Ctrl}
   - {type: trans}
-  - PG DN
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-down$$
   - {type: trans}
+  - Ctrl
+  - Shift
+  - Alt
+  - Gui
   - {type: trans}
   - {type: trans}
   - {type: trans}
