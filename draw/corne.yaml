@@ -24,8 +24,8 @@ layers:
   - {t: K, h: Shift}
   - {t: L, h: Gui}
   - {t: '''', h: Alt}
-  - ':'
-  - Shift
+  - '`'
+  - {t: LSHFT, h: sticky, s: CAPSWORD}
   - Z
   - X
   - C
@@ -35,14 +35,14 @@ layers:
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: '?', s: '!'}
-  - Alt
-  - '&nav'
+  - /
+  - CANCEL
   - {t: LSHFT, h: sticky, s: CAPSWORD}
+  - {t: ⇥, h: nav}
   - ⮐
   - ␣
-  - BSPC
-  - {t: CANCEL, h: num}
+  - {t: BSPC, h: num}
+  - ⌦
   num:
   - {type: trans}
   - {t: '7', s: '&'}
@@ -50,10 +50,10 @@ layers:
   - {t: '9', s: (}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - PG UP
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -62,11 +62,11 @@ layers:
   - {t: '6', h: Ctrl, s: ^}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - PG DN
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
-  - $$mdi:arrow-up$$
-  - $$mdi:arrow-right$$
+  - $$mdi:arrow-down$$
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {t: '1', s: '!'}
@@ -80,12 +80,12 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: ., h: nav}
+  - .
   - {t: '0', s: )}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
   nav:
   - {type: trans}
   - {t: ⌘+7, s: ⌘+&}
@@ -93,10 +93,10 @@ layers:
   - {t: ⌘+9, s: ⌘+(}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - PG UP
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -105,11 +105,11 @@ layers:
   - {t: ⌘+6, h: Ctrl, s: ⌘+^}
   - $$mdi:magnify$$
   - {type: trans}
+  - PG DN
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-down$$
   - {type: trans}
-  - ⌘+H
-  - ⌘+J
-  - ⌘+K
-  - ⌘+L
   - {type: trans}
   - {type: trans}
   - {t: ⌘+1, s: ⌘+!}
@@ -123,12 +123,12 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
-  - {t: ⌘+0, s: ⌘+)}
+  - {type: trans}
+  - {t: ⌘+0, s: ⌘+), type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
+  - {type: trans}
   move:
   - {type: trans}
   - {t: ⌘+⇧+7, s: ⌘+⇧+&}
@@ -149,10 +149,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - ⇧+⌘+H
-  - ⇧+⌘+J
-  - ⇧+⌘+K
-  - ⇧+⌘+L
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {t: ⌘+⇧+1, s: ⌘+⇧+!}
@@ -186,11 +186,11 @@ layers:
   - $$mdi:skip-next$$
   - {type: trans}
   - {type: trans}
-  - OUT USB
-  - BRI UP
-  - BRI DN
-  - BT CLR
-  - {type: trans}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
   - {type: trans}
   - VOL DN
   - VOL UP
@@ -198,10 +198,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '0'}
+  - OUT USB
+  - BRI UP
+  - BRI DN
+  - BT CLR
   - {type: trans}
   - {type: trans}
   - ^+⇧+⎇+M
@@ -209,12 +209,12 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
 combos:
 - p: [2, 4]
   k: ^+A
