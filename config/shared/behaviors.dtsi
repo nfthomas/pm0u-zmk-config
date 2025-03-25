@@ -4,10 +4,9 @@
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-// tap: qmark | shift + tap: excl
-SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 // Tap: lparens  |  shift + tap: <
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LESS_THAN)
+
 // Tap: lparens  |  shift + tap: <
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GREATER_THAN)
 
@@ -16,6 +15,9 @@ SIMPLE_MORPH(comma_semi, SFT, &kp COMMA, &kp SEMI)
 
 // tap: dot | shift + tap: colon
 SIMPLE_MORPH(dot_colon, SFT, &kp DOT, &kp COLON)
+
+// tap: qmark | shift + tap: excl
+SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
 ZMK_MOD_MORPH(smart_shft,
