@@ -32,7 +32,7 @@
 
 ### Combos
 
-![keymap](/draw/combos.svg)
+![combos](/draw/combos.svg)
 
 ### Layers
 
