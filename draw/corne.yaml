@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - _
-  - Ctrl
+  - {t: type, h: toggle, s: nav}
   - {t: A, h: Gui}
   - {t: S, h: Alt}
   - {t: D, h: Shift}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: Shift}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - '`'
-  - Shift
+  - {t: num, h: toggle, s: fn}
+  - Ctrl
   - Z
   - X
   - C
@@ -35,7 +35,7 @@ layers:
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - /
+  - {t: '?', s: '!'}
   - CANCEL
   - {t: LSHFT, h: sticky, s: CAPSWORD}
   - {t: ⇥, h: nav}
@@ -50,42 +50,42 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {type: trans}
-  - PG UP
-  - HOME
-  - $$mdi:arrow-up$$
-  - END
+  - {type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {t: '4', h: Alt, s: $}
   - {t: '5', h: Shift, s: '%'}
   - {t: '6', h: Ctrl, s: ^}
   - {type: trans}
-  - PG DN
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-down$$
   - {type: trans}
+  - {t: '4', h: Ctrl, s: $}
+  - {t: '5', h: Shift, s: '%'}
+  - {t: '6', h: Alt, s: ^}
   - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '0', s: )}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {type: trans}
   - {type: trans}
   - .
   - {t: '0', s: )}
   - {type: trans}
   - {type: trans}
-  - {type: held}
-  - {type: trans}
+  - {t: '0', s: ), type: held}
+  - .
   nav:
   - {type: trans}
   - {type: trans}
@@ -99,7 +99,7 @@ layers:
   - END
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {t: ⌘+4, h: Alt, s: ⌘+$}
   - {t: ⌘+5, h: Shift, s: ⌘+%}
@@ -110,7 +110,7 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
   - {type: trans}
-  - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {type: trans}
   - {t: ⌘+1, s: ⌘+!}
@@ -118,12 +118,12 @@ layers:
   - {t: ⌘+3, s: ⌘+#}
   - {type: trans}
   - {type: trans}
+  - {t: ⌘+1, s: ⌘+!}
+  - {t: ⌘+2, s: ⌘+@}
+  - {t: ⌘+3, s: ⌘+#}
+  - {t: ⌘+4, s: ⌘+$}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - .
   - {t: ⌘+0, s: ⌘+), type: held}
   - {type: trans}
   - {type: trans}
@@ -166,7 +166,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - .
+  - {type: trans}
   - {t: ⌘+⇧+0, s: ⌘+⇧+)}
   - {type: trans}
   - {type: trans}
@@ -223,23 +223,28 @@ layers:
   - F9
   - {type: trans}
   - {type: trans}
+  - F7
+  - F8
+  - F9
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: base, h: toggle}
+  - Gui
   - {t: F4, h: Alt}
   - {t: F5, h: Shift}
   - {t: F6, h: Ctrl}
   - {type: trans}
   - {type: trans}
-  - Ctrl
-  - Shift
-  - Alt
+  - {t: F4, h: Ctrl}
+  - {t: F5, h: Shift}
+  - {t: F6, h: Alt}
   - Gui
+  - {t: base, h: toggle}
   - {type: trans}
+  - {type: trans}
+  - F1
+  - F2
+  - F3
   - {type: trans}
   - {type: trans}
   - F1
@@ -252,12 +257,50 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: held}
+  type:
+  - {type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {type: trans}
+  - {t: base, h: toggle}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - {t: base, h: toggle}
+  - {type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - {type: trans}
+  - {t: LSHFT, h: sticky, s: CAPSWORD}
+  - {type: trans}
+  - ⮐
+  - ␣
+  - {t: BSPC, h: num}
+  - {t: ⌦, h: fn}
 combos:
 - p: [2, 4]
   k: ^+A
@@ -269,13 +312,13 @@ combos:
   k: ^+Z
   l: [base, nav, num]
 - p: [3, 4]
-  k: ^+⇧+Z
-  l: [base, nav, num]
-- p: [16, 15]
-  k: {t: Tab, h: ⇧+Ctrl}
+  k: ^+Y
   l: [base, nav, num]
 - p: [15, 14]
   k: {t: Esc, h: ⇧+Alt}
+  l: [base, nav, num]
+- p: [16, 15]
+  k: {t: Tab, h: ⇧+Ctrl}
   l: [base, nav, num]
 - p: [26, 28]
   k: ^+X
@@ -289,34 +332,29 @@ combos:
   k: ^+V
   l: [base, nav, num]
 - p: [7, 8]
-  k: '{'
+  k: {t: (, s: <}
   l: [base, nav, num]
 - p: [8, 9]
-  k: '}'
+  k: {t: ), s: '>'}
   l: [base, nav, num]
 - p: [7, 9]
-  k: ()=>{}
+  k: ^+`
   l: [base, nav, num]
-  a: top
-  o: 0.3
-  w: 60.0
 - p: [19, 20]
-  k: {t: (, h: ⇧+Ctrl, s: <}
+  k: {t: LBKT 0, h: ⇧+Ctrl}
   l: [base, nav, num]
 - p: [20, 21]
-  k: {t: ), h: ⇧+Alt, s: '>'}
+  k: {t: RBKT 0, h: ⇧+Alt}
   l: [base, nav, num]
 - p: [31, 32]
-  k: '['
+  k: BSPC
   l: [base, nav, num]
 - p: [32, 33]
-  k: ']'
+  k: ⌦
   l: [base, nav, num]
-- p: [31, 33]
-  k: ()=>
+- p: [13, 1]
+  k: '!'
   l: [base, nav, num]
-  a: bottom
-  w: 40.0
 - p: [14, 2]
   k: '@'
   l: [base, nav, num]
@@ -332,12 +370,6 @@ combos:
 - p: [26, 14]
   k: '`'
   l: [base, nav, num]
-- p: [27, 15]
-  k: \
-  l: [base, nav, num]
-- p: [28, 16]
-  k: '='
-  l: [base, nav, num]
 - p: [29, 17]
   k: '~'
   l: [base, nav, num]
@@ -351,7 +383,10 @@ combos:
   k: '*'
   l: [base, nav, num]
 - p: [21, 9]
-  k: +
+  k: _
+  l: [base, nav, num]
+- p: [22, 22]
+  k: '='
   l: [base, nav, num]
 - p: [30, 18]
   k: _
@@ -363,5 +398,5 @@ combos:
   k: /
   l: [base, nav, num]
 - p: [33, 21]
-  k: _
+  k: \
   l: [base, nav, num]
