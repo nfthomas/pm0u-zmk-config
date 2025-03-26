@@ -42,6 +42,16 @@ ZMK_BEHAVIOR(esc, tap_dance,
     bindings = <&kp ESC>;
 )
 
+ZMK_BEHAVIOR(l_bracket, tap_dance,
+    tapping-term-ms = <0>;
+    bindings = <&kp LBKT>;
+)
+
+ZMK_BEHAVIOR(r_bracket, tap_dance,
+    tapping-term-ms = <0>;
+    bindings = <&kp RBKT>;
+)
+
 ZMK_BEHAVIOR(l_brace, tap_dance,
     tapping-term-ms = <0>;
     bindings = <&kp LBRC>;
