@@ -302,35 +302,35 @@ layers:
   - {t: BSPC, h: num}
   - {t: ⌦, h: fn}
 combos:
-- p: [2, 4]
-  k: ^+A
-  l: [base, nav, num]
-  a: top
-  o: 0.3
-  w: 40.0
 - p: [2, 3]
   k: ^+Z
   l: [base, nav, num]
 - p: [3, 4]
   k: ^+Y
   l: [base, nav, num]
+- p: [2, 4]
+  k: ^+A
+  l: [base, nav, num]
+  a: top
+  o: 0.3
+  w: 40.0
 - p: [15, 14]
   k: {t: Esc, h: ⇧+Alt}
   l: [base, nav, num]
 - p: [16, 15]
   k: {t: Tab, h: ⇧+Ctrl}
   l: [base, nav, num]
-- p: [26, 28]
-  k: ^+X
-  l: [base, nav, num]
-  a: bottom
-  w: 40.0
 - p: [26, 27]
   k: ^+C
   l: [base, nav, num]
 - p: [27, 28]
   k: ^+V
   l: [base, nav, num]
+- p: [26, 28]
+  k: ^+X
+  l: [base, nav, num]
+  a: bottom
+  w: 40.0
 - p: [7, 8]
   k: {t: (, s: <}
   l: [base, nav, num]
@@ -352,6 +352,9 @@ combos:
 - p: [32, 33]
   k: ⌦
   l: [base, nav, num]
+- p: [31, 33]
+  k: ^+BSPC
+  l: [base, nav, num]
 - p: [13, 1]
   k: '!'
   l: [base, nav, num]
@@ -367,11 +370,20 @@ combos:
 - p: [17, 5]
   k: '%'
   l: [base, nav, num]
+- p: [25, 13]
+  k: '~'
+  l: [base, nav, num]
 - p: [26, 14]
   k: '`'
   l: [base, nav, num]
+- p: [27, 15]
+  k: ;
+  l: [base, nav, num]
+- p: [28, 16]
+  k: '='
+  l: [base, nav, num]
 - p: [29, 17]
-  k: '~'
+  k: _
   l: [base, nav, num]
 - p: [18, 6]
   k: ^
@@ -385,18 +397,21 @@ combos:
 - p: [21, 9]
   k: _
   l: [base, nav, num]
-- p: [22, 22]
+- p: [22, 10]
   k: '='
   l: [base, nav, num]
 - p: [30, 18]
   k: _
   l: [base, nav, num]
 - p: [31, 19]
-  k: '|'
+  k: /
   l: [base, nav, num]
 - p: [32, 20]
-  k: /
+  k: ':'
   l: [base, nav, num]
 - p: [33, 21]
   k: \
+  l: [base, nav, num]
+- p: [34, 22]
+  k: '|'
   l: [base, nav, num]
