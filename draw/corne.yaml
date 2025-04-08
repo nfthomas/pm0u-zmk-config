@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - _
+  - {t: nav, h: toggle}
   - {t: type, h: toggle, s: nav}
   - {t: A, h: Gui}
   - {t: S, h: Alt}
@@ -37,12 +37,12 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - CANCEL
-  - {t: LSHFT, h: sticky, s: CAPSWORD}
-  - {t: ⇥, h: nav}
-  - ⮐
-  - ␣
-  - {t: BSPC, h: num}
   - {t: ⌦, h: fn}
+  - {t: ⇥, h: nav}
+  - {t: ⮐, h: num}
+  - ␣
+  - BSPC
+  - {t: LSHFT, h: sticky, s: CAPSWORD}
   num:
   - {type: trans}
   - {type: trans}
@@ -82,9 +82,9 @@ layers:
   - {type: trans}
   - .
   - {t: '0', s: )}
+  - {type: held}
   - {type: trans}
-  - {type: trans}
-  - {t: '0', s: ), type: held}
+  - {t: '0', s: )}
   - .
   nav:
   - {type: trans}
@@ -211,9 +211,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   fn:
   - {type: trans}
@@ -221,8 +221,8 @@ layers:
   - F7
   - F8
   - F9
-  - {type: trans}
-  - {type: trans}
+  - F12
+  - F12
   - F7
   - F8
   - F9
@@ -233,8 +233,8 @@ layers:
   - {t: F4, h: Alt}
   - {t: F5, h: Shift}
   - {t: F6, h: Ctrl}
-  - {type: trans}
-  - {type: trans}
+  - F11
+  - F11
   - {t: F4, h: Ctrl}
   - {t: F5, h: Shift}
   - {t: F6, h: Alt}
@@ -245,19 +245,19 @@ layers:
   - F1
   - F2
   - F3
-  - {type: trans}
-  - {type: trans}
+  - F10
+  - F10
   - F1
   - F2
   - F3
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   type:
   - {type: trans}
   - Q
@@ -295,12 +295,12 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {type: trans}
-  - {t: LSHFT, h: sticky, s: CAPSWORD}
+  - ⌦
   - {type: trans}
   - ⮐
   - ␣
-  - {t: BSPC, h: num}
-  - {t: ⌦, h: fn}
+  - BSPC
+  - {type: trans}
 combos:
 - p: [2, 3]
   k: ^+Z
@@ -331,6 +331,9 @@ combos:
   l: [base, nav, num]
   a: bottom
   w: 40.0
+- p: [28, 29]
+  k: ⮐
+  l: [base, nav, num]
 - p: [7, 8]
   k: {t: (, s: <}
   l: [base, nav, num]
@@ -345,6 +348,9 @@ combos:
   l: [base, nav, num]
 - p: [20, 21]
   k: {t: '&r_bracket', h: ⇧+Alt}
+  l: [base, nav, num]
+- p: [30, 31]
+  k: ␣
   l: [base, nav, num]
 - p: [31, 32]
   k: BSPC
