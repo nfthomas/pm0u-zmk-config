@@ -40,10 +40,11 @@ ZMK_COMBO(s_all, &kp LC(A),     LT3 LT1,      BASE NAV NUM, COMBO_TERM_FAST, COM
 ZMK_COMBO(esc,  &esc,         LM2 LM3,        BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LS(LALT),     KEYS_R)
 ZMK_COMBO(tab,  &tab,         LM1 LM2,        BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LS(LCTRL),    KEYS_R)
 
-// bottom row copy/paste/cut
+// bottom row copy/paste/cut; holdable RETURN
 ZMK_COMBO(copy,  &kp LC(C),     LB3 LB2,      BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(paste, &kp LC(V),     LB2 LB1,      BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cut,   &kp LC(X),     LB3 LB1,      BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(return, &kp RET,      LB1 LB0,      BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Right side */
 
@@ -56,7 +57,8 @@ ZMK_COMBO(open_term, &kp LC(GRAVE),  RT1 RT3,      BASE NAV NUM, COMBO_TERM_FAST
 ZMK_COMBO(lbkt,  &l_bracket,      RM1 RM2,      BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(RCTRL), KEYS_L)
 ZMK_COMBO(rbkt,  &r_bracket,      RM2 RM3,      BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(RALT),  KEYS_L)
 
-// bottom row holdable BACKSPACE DEL, BACKSPACE word
+// bottom row holdable SPACE BACKSPACE DEL; word backspace
+ZMK_COMBO(space,      &kp SPACE,     RB0 RB1,       BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(backspace,  &kp BSPC,      RB1 RB2,       BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(delete,     &kp DEL,       RB2 RB3,       BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(word_bspc,  &kp LC(BSPC),  RB1 RB3,       BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
