@@ -73,7 +73,7 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {type: trans}
+  - {t: '0', s: )}
   - {t: '0', s: )}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -81,10 +81,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - .
-  - {t: '0', s: )}
+  - {type: trans}
   - {type: held}
   - {type: trans}
-  - {t: '0', s: )}
+  - {type: trans}
   - .
   nav:
   - {type: trans}
