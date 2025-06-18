@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: nav, h: toggle}
+  - {t: num, h: toggle, s: util}
   - {t: type, h: toggle, s: nav}
   - {t: A, h: Gui}
   - {t: S, h: Alt}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: Shift}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - {t: num, h: toggle, s: fn}
-  - Ctrl
+  - {t: nav, h: toggle, s: fn}
+  - {t: base, h: toggle}
   - Z
   - X
   - C
@@ -56,7 +56,7 @@ layers:
   - {t: '9', s: (}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {t: '4', h: Alt, s: $}
   - {t: '5', h: Shift, s: '%'}
@@ -67,7 +67,7 @@ layers:
   - {t: '5', h: Shift, s: '%'}
   - {t: '6', h: Alt, s: ^}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {t: '1', s: '!'}
@@ -99,7 +99,7 @@ layers:
   - END
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {t: ⌘+4, h: Alt, s: ⌘+$}
   - {t: ⌘+5, h: Shift, s: ⌘+%}
@@ -110,7 +110,7 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {t: ⌘+1, s: ⌘+!}
@@ -228,7 +228,7 @@ layers:
   - F9
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - Gui
   - {t: F4, h: Alt}
   - {t: F5, h: Shift}
@@ -239,7 +239,7 @@ layers:
   - {t: F5, h: Shift}
   - {t: F6, h: Alt}
   - Gui
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - F1
@@ -271,7 +271,7 @@ layers:
   - O
   - P
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - A
   - S
   - D
@@ -282,7 +282,7 @@ layers:
   - K
   - L
   - ''''
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - Z
   - X
@@ -361,6 +361,9 @@ combos:
 - p: [31, 33]
   k: ^+BSPC
   l: [base, nav, num]
+- p: [12, 0]
+  k: ^+B
+  l: [base, nav, num]
 - p: [13, 1]
   k: '!'
   l: [base, nav, num]
@@ -375,6 +378,9 @@ combos:
   l: [base, nav, num]
 - p: [17, 5]
   k: '%'
+  l: [base, nav, num]
+- p: [24, 12]
+  k: ^+G
   l: [base, nav, num]
 - p: [25, 13]
   k: '~'
@@ -406,6 +412,9 @@ combos:
 - p: [22, 10]
   k: '='
   l: [base, nav, num]
+- p: [23, 11]
+  k: ^+`
+  l: [base, nav, num]
 - p: [30, 18]
   k: _
   l: [base, nav, num]
@@ -420,4 +429,7 @@ combos:
   l: [base, nav, num]
 - p: [34, 22]
   k: '|'
+  l: [base, nav, num]
+- p: [35, 23]
+  k: ^+⎇+I
   l: [base, nav, num]

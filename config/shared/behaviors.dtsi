@@ -17,13 +17,16 @@ SIMPLE_MORPH(comma_semi, SFT, &kp COMMA, &kp SEMI)
 SIMPLE_MORPH(dot_colon, SFT, &kp DOT, &kp COLON)
 
 // tap: qmark | shift + tap: excl
-SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
+SIMPLE_MORPH(q_excl, SFT, &kp QMARK, &kp EXCL)
 
 // tap: TYPE layer | shift + tap: NAV layer
 SIMPLE_MORPH(type_nav, SFT, &to TYPE, &to NAV)
 
-// tap: NUM layer | shift + tap: FN layer
-SIMPLE_MORPH(num_fn, SFT, &to NUM, &to FN)
+// tap: NAV layer | shift + tap: FN layer
+SIMPLE_MORPH(nav_fn, SFT, &to NAV, &to FN)
+
+// tap: NUM layer | shift + tap: UTIL layer
+SIMPLE_MORPH(num_util, SFT, &to NUM, &to UTIL)
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
 ZMK_MOD_MORPH(smart_shft,
