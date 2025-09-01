@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: nfthomas
-      url-base: https://github.com/nfthomas
+    - name: infely
+      url-base: https://github.com/infely
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,8 +14,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-    - name: infely-nice-view-battery
-      remote: nfthomas
+    - name: nice-view-battery
+      remote: infely
       revision: main
   self:
     path: config
