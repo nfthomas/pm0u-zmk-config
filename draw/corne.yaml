@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - {t: num, h: toggle, s: util}
-  - {t: type, h: toggle, s: nav}
+  - {t: num, h: toggle}
+  - {t: type, h: toggle}
   - {t: A, h: Gui}
   - {t: S, h: Alt}
   - {t: D, h: Shift}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
   - {t: nav, h: toggle, s: fn}
-  - {t: base, h: toggle}
+  - CANCEL
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - CANCEL
+  - {t: base, h: toggle}
   - {t: ⌦, h: fn}
   - {t: ⇥, h: nav}
   - {t: ⮐, h: num}
@@ -84,7 +84,7 @@ layers:
   - {type: trans}
   - {type: held}
   - {type: trans}
-  - {type: trans}
+  - {t: '0', s: )}
   - .
   nav:
   - {type: trans}
@@ -97,7 +97,7 @@ layers:
   - HOME
   - $$mdi:arrow-up$$
   - END
-  - {type: trans}
+  - INSERT
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -181,9 +181,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - '&bootloader'
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
+  - VOL UP
+  - BRI UP
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {t: BT, h: '0'}
@@ -192,22 +192,22 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {type: trans}
-  - VOL DN
-  - VOL UP
   - $$mdi:volume-off$$
+  - VOL DN
+  - BRI DN
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - OUT USB
-  - BRI UP
-  - BRI DN
+  - OUT USB
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - BT CLR
-  - {type: trans}
-  - {type: trans}
-  - ^+⇧+⎇+M
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: held}
@@ -226,7 +226,7 @@ layers:
   - F7
   - F8
   - F9
-  - {type: trans}
+  - PRINTSCREEN
   - {type: trans}
   - {type: trans}
   - Gui
@@ -250,7 +250,7 @@ layers:
   - F1
   - F2
   - F3
-  - {type: trans}
+  - APPLICATION
   - {type: trans}
   - {type: held}
   - {type: trans}
@@ -303,22 +303,19 @@ layers:
   - {type: trans}
 combos:
 - p: [2, 3]
-  k: ^+Z
+  k: Esc
   l: [base, nav, num]
 - p: [3, 4]
-  k: ^+Y
+  k: Tab
   l: [base, nav, num]
 - p: [2, 4]
-  k: ^+A
+  k: ^+`
   l: [base, nav, num]
-  a: top
-  o: 0.3
-  w: 40.0
 - p: [15, 14]
-  k: {t: Esc, h: ⇧+Alt}
+  k: {t: (, h: ⇧+Alt, s: <}
   l: [base, nav, num]
 - p: [16, 15]
-  k: {t: Tab, h: ⇧+Ctrl}
+  k: {t: ), h: ⇧+Ctrl, s: '>'}
   l: [base, nav, num]
 - p: [26, 27]
   k: ^+C
@@ -335,13 +332,13 @@ combos:
   k: ⮐
   l: [base, nav, num]
 - p: [7, 8]
-  k: {t: (, s: <}
+  k: BSPC
   l: [base, nav, num]
 - p: [8, 9]
-  k: {t: ), s: '>'}
+  k: ⌦
   l: [base, nav, num]
 - p: [7, 9]
-  k: ^+`
+  k: ^+/
   l: [base, nav, num]
 - p: [19, 20]
   k: {t: '&l_bracket', h: ⇧+Ctrl}
@@ -353,13 +350,10 @@ combos:
   k: ␣
   l: [base, nav, num]
 - p: [31, 32]
-  k: BSPC
+  k: ⎇+$$mdi:arrow-left$$
   l: [base, nav, num]
 - p: [32, 33]
-  k: ⌦
-  l: [base, nav, num]
-- p: [31, 33]
-  k: ^+BSPC
+  k: ⎇+$$mdi:arrow-right$$
   l: [base, nav, num]
 - p: [12, 0]
   k: ^+B
@@ -392,10 +386,10 @@ combos:
   k: ;
   l: [base, nav, num]
 - p: [28, 16]
-  k: '='
+  k: _
   l: [base, nav, num]
 - p: [29, 17]
-  k: _
+  k: '='
   l: [base, nav, num]
 - p: [18, 6]
   k: ^
@@ -416,10 +410,10 @@ combos:
   k: ^+`
   l: [base, nav, num]
 - p: [30, 18]
-  k: _
+  k: /
   l: [base, nav, num]
 - p: [31, 19]
-  k: /
+  k: _
   l: [base, nav, num]
 - p: [32, 20]
   k: ':'
