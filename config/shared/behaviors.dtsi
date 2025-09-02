@@ -20,12 +20,14 @@ SIMPLE_MORPH(dot_colon, SFT, &kp DOT, &kp COLON)
 SIMPLE_MORPH(q_excl, SFT, &kp QMARK, &kp EXCL)
 
 // tap: TYPE layer | shift + tap: NAV layer
+// this is kinda dumb since you can't HRM from TYPE layer
 SIMPLE_MORPH(type_nav, SFT, &to TYPE, &to NAV)
 
 // tap: NAV layer | shift + tap: FN layer
 SIMPLE_MORPH(nav_fn, SFT, &to NAV, &to FN)
 
 // tap: NUM layer | shift + tap: UTIL layer
+// this seems to interfere with the conditional NAV/NUM -> UTIL
 SIMPLE_MORPH(num_util, SFT, &to NUM, &to UTIL)
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
