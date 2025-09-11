@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: num, h: toggle}
+  - {t: '123', h: toggle}
   - {t: type, h: toggle}
   - {t: A, h: Gui}
   - {t: S, h: Alt}
@@ -39,11 +39,11 @@ layers:
   - {t: base, h: toggle}
   - {t: ⌦, h: fn}
   - {t: ⇥, h: nav}
-  - {t: ⮐, h: num}
+  - {t: ⮐, h: '123'}
   - ␣
   - BSPC
   - {t: LSHFT, h: sticky, s: CAPSWORD}
-  num:
+  '123':
   - {type: trans}
   - {type: trans}
   - {t: '7', s: '&'}
@@ -304,126 +304,126 @@ layers:
 combos:
 - p: [2, 3]
   k: Esc
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [3, 4]
   k: Tab
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [2, 4]
   k: ^+`
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [15, 14]
   k: {t: (, h: ⇧+Alt, s: <}
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [16, 15]
   k: {t: ), h: ⇧+Ctrl, s: '>'}
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [26, 27]
   k: ^+C
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [27, 28]
   k: ^+V
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [26, 28]
   k: ^+X
-  l: [base, nav, num]
+  l: [base, nav, '123']
   a: bottom
   w: 40.0
 - p: [28, 29]
   k: ⮐
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [7, 8]
   k: BSPC
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [8, 9]
   k: ⌦
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [7, 9]
   k: ^+/
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [19, 20]
   k: {t: '&l_bracket', h: ⇧+Ctrl}
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [20, 21]
   k: {t: '&r_bracket', h: ⇧+Alt}
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [30, 31]
   k: ␣
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [31, 32]
   k: ⎇+$$mdi:arrow-left$$
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [32, 33]
   k: ⎇+$$mdi:arrow-right$$
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [12, 0]
   k: ^+B
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [13, 1]
   k: '!'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [14, 2]
   k: '@'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [15, 3]
   k: '#'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [16, 4]
   k: $
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [17, 5]
   k: '%'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [24, 12]
   k: ^+G
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [25, 13]
   k: '~'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [26, 14]
   k: '`'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [27, 15]
   k: ;
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [28, 16]
   k: _
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [29, 17]
   k: '='
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [18, 6]
   k: ^
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [19, 7]
   k: '&'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [20, 8]
   k: '*'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [21, 9]
   k: _
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [22, 10]
   k: '='
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [23, 11]
   k: ^+`
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [30, 18]
   k: /
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [31, 19]
   k: _
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [32, 20]
   k: ':'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [33, 21]
   k: \
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [34, 22]
   k: '|'
-  l: [base, nav, num]
+  l: [base, nav, '123']
 - p: [35, 23]
   k: ^+⎇+I
-  l: [base, nav, num]
+  l: [base, nav, '123']
