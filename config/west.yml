@@ -16,6 +16,6 @@ manifest:
       revision: main
     - name: infely-nice-view-battery
       remote: nfthomas
-      revision: main
+      revision: snapshot-zephyr-4.1
   self:
     path: config
