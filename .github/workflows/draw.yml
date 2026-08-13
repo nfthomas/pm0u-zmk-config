@@ -13,14 +13,32 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    runs-on: ubuntu-latest
     permissions:
-      contents: write # allow workflow to commit to the repo
-    with:
-      amend_commit: true
-      west_config_path: "config"
-      keymap_patterns: "config/corne.keymap" # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists
-      output_folder: "draw" # path to save produced SVG and keymap YAML files
-      parse_args: "" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "corne:'-k crkbd/rev1 -l LAYOUT_split_3x6_3 --keys-only' " # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Install keymap-drawer and west
+        run: |
+          pipx install keymap-drawer
+          pipx install west
+      - name: Fetch west modules
+        run: |
+          west init -l config
+          west config manifest.project-filter " -zmk,-zephyr"
+          west update --fetch-opt=--filter=tree:0
+      - name: Parse keymap
+        run: keymap -c ./keymap_drawer.config.yaml parse -z ./config/corne.keymap > draw/corne.yaml
+      - name: Draw layers
+        run: keymap -c ./keymap_drawer.config.yaml draw draw/corne.yaml -k "crkbd/rev1" -l "LAYOUT_split_3x6_3" > ./draw/corne.svg
+      - name: Draw combos
+        run: keymap -c ./keymap_drawer.config.yaml draw draw/corne.yaml -k "crkbd/rev1" -l "LAYOUT_split_3x6_3" -s base --combos-only > ./draw/combos.svg
+      - name: Commit drawings
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add draw/corne.svg draw/combos.svg draw/corne.yaml
+          git diff --cached --quiet || (git commit --amend --no-edit && git push --force-with-lease)

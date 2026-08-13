@@ -39,9 +39,9 @@ layers:
   - {t: base, h: toggle}
   - {t: ⌦, h: fn}
   - {t: ⇥, h: nav}
-  - {t: ⮐, h: '123'}
-  - ␣
-  - BSPC
+  - ⮐
+  - {t: ␣, h: sym}
+  - {t: BSPC, h: '123'}
   - {t: LSHFT, h: sticky, s: CAPSWORD}
   '123':
   - {type: trans}
@@ -82,9 +82,9 @@ layers:
   - {type: trans}
   - .
   - {type: trans}
-  - {type: held}
   - {type: trans}
-  - {t: '0', s: )}
+  - {type: trans}
+  - {t: '0', s: ), type: held}
   - .
   nav:
   - {type: trans}
@@ -211,9 +211,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
   - {type: trans}
   fn:
   - {type: trans}
@@ -300,6 +300,49 @@ layers:
   - ⮐
   - ␣
   - BSPC
+  - {type: trans}
+  sym:
+  - {type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - _
+  - '='
+  - {type: trans}
+  - {type: trans}
+  - {t: '~', h: Gui}
+  - {t: '`', h: Alt}
+  - {t: ;, h: Shift}
+  - {t: _, h: Ctrl}
+  - '='
+  - /
+  - {t: _, h: Ctrl}
+  - {t: ':', h: Shift}
+  - {t: \, h: Alt}
+  - {t: '|', h: Gui}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
   - {type: trans}
 combos:
 - p: [2, 3]
