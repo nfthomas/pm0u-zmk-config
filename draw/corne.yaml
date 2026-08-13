@@ -39,9 +39,9 @@ layers:
   - {t: base, h: toggle}
   - {t: ⌦, h: fn}
   - {t: ⇥, h: nav}
-  - ⮐
+  - {t: ⮐, h: '123'}
   - {t: ␣, h: sym}
-  - {t: BSPC, h: '123'}
+  - {t: BSPC, h: fn}
   - {t: LSHFT, h: sticky, s: CAPSWORD}
   '123':
   - {type: trans}
@@ -82,9 +82,9 @@ layers:
   - {type: trans}
   - .
   - {type: trans}
+  - {type: held}
   - {type: trans}
-  - {type: trans}
-  - {t: '0', s: ), type: held}
+  - {t: '0', s: )}
   - .
   nav:
   - {type: trans}
@@ -211,9 +211,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   fn:
   - {type: trans}

@@ -33,7 +33,7 @@ jobs:
       - name: Parse keymap
         run: keymap -c ./keymap_drawer.config.yaml parse -z ./config/corne.keymap > draw/corne.yaml
       - name: Draw layers
-        run: keymap -c ./keymap_drawer.config.yaml draw draw/corne.yaml -k "crkbd/rev1" -l "LAYOUT_split_3x6_3" > ./draw/corne.svg
+        run: keymap -c ./keymap_drawer.config.yaml draw draw/corne.yaml -k "crkbd/rev1" -l "LAYOUT_split_3x6_3" --keys-only > ./draw/corne.svg
       - name: Draw combos
         run: keymap -c ./keymap_drawer.config.yaml draw draw/corne.yaml -k "crkbd/rev1" -l "LAYOUT_split_3x6_3" -s base --combos-only > ./draw/combos.svg
       - name: Commit drawings
