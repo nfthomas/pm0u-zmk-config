@@ -210,8 +210,8 @@ layers:
   - BT CLR
   - {type: trans}
   - {type: trans}
-  - {type: held}
-  - {type: held}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
