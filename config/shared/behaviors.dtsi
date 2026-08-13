@@ -69,4 +69,4 @@ ZMK_BEHAVIOR(nav, tap_dance,
     bindings = <&mo NAV>, <&mo MV>;
 )
 
-ZMK_CONDITIONAL_LAYER(util, NAV NUM, UTIL)
+ZMK_CONDITIONAL_LAYER(util, NAV FN, UTIL)
