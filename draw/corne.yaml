@@ -37,11 +37,11 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: base, h: toggle}
-  - {t: ⌦, h: util}
+  - {t: ⌦, h: fn}
   - {t: ⇥, h: nav}
   - {t: ⮐, h: '123'}
-  - {t: ␣, h: sym}
-  - {t: BSPC, h: fn}
+  - ␣
+  - {t: BSPC, h: sym}
   - {t: LSHFT, h: sticky, s: CAPSWORD}
   '123':
   - {type: trans}
@@ -209,11 +209,11 @@ layers:
   - F3
   - APPLICATION
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   type:
   - {type: trans}
@@ -298,8 +298,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
   - {type: trans}
+  - {type: held}
   - {type: trans}
   util:
   - {type: trans}
@@ -339,7 +339,7 @@ layers:
   - BT CLR
   - {type: trans}
   - {type: held}
-  - {type: trans}
+  - {type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}

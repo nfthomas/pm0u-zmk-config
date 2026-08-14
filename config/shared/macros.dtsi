@@ -20,3 +20,9 @@ ZMK_MACRO(fn_impl,
           <&macro_tap &kp LEFT &kp LEFT &kp LEFT>,
           <&macro_tap &kp LEFT>;
 )
+// toggle NAV + FN to activate conditional UTIL
+ZMK_MACRO(util_toggle,
+      bindings
+          = <&macro_tap &tog NAV>,
+          <&macro_tap &tog FN>;
+)
