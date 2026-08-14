@@ -58,6 +58,7 @@ parse_config:
       "&kp LG(SEMI)": "$$mdi:magnify$$",
       "&fn_opn": "()=>{}",
       "&fn_impl": "()=>",
+      "&util_toggle": { t: "util", h: toggle },
     }
   sticky_label: sticky
   toggle_label: toggle

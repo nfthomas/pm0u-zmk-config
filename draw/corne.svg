@@ -296,9 +296,7 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <g transform="translate(30, 175)" class="key keypos-24">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key side"/>
 <rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key"/>
-<a href="#util">
-<text x="0" y="-4" class="key tap layer-activator">util</text>
-</a><text x="0" y="26" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 62%">&amp;util_t…</tspan></text>
 </g>
 <g transform="translate(92, 175)" class="key keypos-25">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key side"/>
@@ -364,8 +362,8 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key side"/>
 <rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key"/>
 <text x="0" y="-4" class="key tap">⌦</text>
-<a href="#util">
-<text x="0" y="26" class="key hold layer-activator">util</text>
+<a href="#fn">
+<text x="0" y="26" class="key hold layer-activator">fn</text>
 </a></g>
 <g transform="translate(311, 232) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key side"/>
@@ -385,15 +383,13 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <rect rx="6" ry="6" x="-28" y="-44" width="57" height="88" class="key side"/>
 <rect rx="4" ry="4" x="-26" y="-44" width="51" height="76" class="key"/>
 <text x="0" y="-4" class="key tap">␣</text>
-<a href="#sym">
-<text x="0" y="42" class="key hold layer-activator">sym</text>
-</a></g>
+</g>
 <g transform="translate(604, 232) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key side"/>
 <rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key"/>
 <text x="0" y="-4" class="key tap">BSPC</text>
-<a href="#fn">
-<text x="0" y="26" class="key hold layer-activator">fn</text>
+<a href="#sym">
+<text x="0" y="26" class="key hold layer-activator">sym</text>
 </a></g>
 <g transform="translate(671, 223)" class="key keypos-41">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key side"/>
@@ -1222,9 +1218,9 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
 <rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key trans"/>
 </g>
-<g transform="translate(244, 223)" class="key trans keypos-36">
-<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
-<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key trans"/>
+<g transform="translate(244, 223)" class="key held keypos-36">
+<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key held side"/>
+<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key held"/>
 </g>
 <g transform="translate(311, 232) rotate(15.0)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
@@ -1238,9 +1234,9 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <rect rx="6" ry="6" x="-28" y="-44" width="57" height="88" class="key trans side"/>
 <rect rx="4" ry="4" x="-26" y="-44" width="51" height="76" class="key trans"/>
 </g>
-<g transform="translate(604, 232) rotate(-15.0)" class="key held keypos-40">
-<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key held side"/>
-<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key held"/>
+<g transform="translate(604, 232) rotate(-15.0)" class="key trans keypos-40">
+<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
+<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key trans"/>
 </g>
 <g transform="translate(671, 223)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
@@ -1645,13 +1641,13 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <rect rx="6" ry="6" x="-28" y="-44" width="57" height="88" class="key trans side"/>
 <rect rx="4" ry="4" x="-26" y="-44" width="51" height="76" class="key trans"/>
 </g>
-<g transform="translate(533, 244) rotate(-30.0)" class="key held keypos-39">
-<rect rx="6" ry="6" x="-28" y="-44" width="57" height="88" class="key held side"/>
-<rect rx="4" ry="4" x="-26" y="-44" width="51" height="76" class="key held"/>
+<g transform="translate(533, 244) rotate(-30.0)" class="key trans keypos-39">
+<rect rx="6" ry="6" x="-28" y="-44" width="57" height="88" class="key trans side"/>
+<rect rx="4" ry="4" x="-26" y="-44" width="51" height="76" class="key trans"/>
 </g>
-<g transform="translate(604, 232) rotate(-15.0)" class="key trans keypos-40">
-<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
-<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key trans"/>
+<g transform="translate(604, 232) rotate(-15.0)" class="key held keypos-40">
+<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key held side"/>
+<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key held"/>
 </g>
 <g transform="translate(671, 223)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
@@ -1850,9 +1846,9 @@ svg.keymap { font-family: 'JetBrains Mono'; }</style>
 <rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key held side"/>
 <rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key held"/>
 </g>
-<g transform="translate(311, 232) rotate(15.0)" class="key trans keypos-37">
-<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key trans side"/>
-<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key trans"/>
+<g transform="translate(311, 232) rotate(15.0)" class="key held keypos-37">
+<rect rx="6" ry="6" x="-28" y="-28" width="57" height="57" class="key held side"/>
+<rect rx="4" ry="4" x="-26" y="-28" width="51" height="45" class="key held"/>
 </g>
 <g transform="translate(382, 244) rotate(30.0)" class="key trans keypos-38">
 <rect rx="6" ry="6" x="-28" y="-44" width="57" height="88" class="key trans side"/>
