@@ -25,7 +25,7 @@ layers:
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
   - {t: nav, h: toggle, s: fn}
-  - CANCEL
+  - {t: util, h: toggle}
   - Z
   - X
   - C
@@ -37,7 +37,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: base, h: toggle}
-  - {t: ⌦, h: fn}
+  - {t: ⌦, h: util}
   - {t: ⇥, h: nav}
   - {t: ⮐, h: '123'}
   - {t: ␣, h: sym}
@@ -172,49 +172,6 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  util:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - '&bootloader'
-  - {type: trans}
-  - {type: trans}
-  - '&bootloader'
-  - VOL UP
-  - BRI UP
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {type: trans}
-  - $$mdi:volume-off$$
-  - VOL DN
-  - BRI DN
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - OUT USB
-  - OUT USB
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - BT CLR
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   fn:
   - {type: trans}
   - {type: trans}
@@ -252,11 +209,11 @@ layers:
   - F3
   - APPLICATION
   - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: trans}
   type:
   - {type: trans}
@@ -342,6 +299,49 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
+  util:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&bootloader'
+  - {type: trans}
+  - {type: trans}
+  - '&bootloader'
+  - VOL UP
+  - BRI UP
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {type: trans}
+  - $$mdi:volume-off$$
+  - VOL DN
+  - BRI DN
+  - {type: trans}
+  - {type: trans}
+  - {t: base, h: toggle}
+  - OUT USB
+  - OUT USB
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - BT CLR
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
 combos:

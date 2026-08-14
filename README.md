@@ -28,7 +28,7 @@
 - `num` layer provides a southpaw numpad.
 - `nav` layer overlays arrow keys over hjkl for easier navigation in non-vim settings. The numpad also has `LG()` applied to all numbers for space changing. there are shortcuts for alfred and mission control on the homerow.
 - `mv` provides single handed window space movement (mod+shift applied over num layer). This is accessed via a double tap of the `NAV` layer key.
-- `util` is a conditional layer triggered by activating nav/fn. this is a bit of a dumping ground for os/media/zmk utils.
+- `util` is a conditional layer available by holding `nav` plus `fn`, by holding the outer-left thumb, or by using the bottom-left key to toggle into `util` and return to base.
 
 ### Layers
 
